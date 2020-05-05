@@ -1,0 +1,7 @@
+16:01:44.605 [main] INFO  Base.Base - log4j - Step 4 has been executed
+16:01:45.974 [main] INFO  Base.Base - log4j - Step 5 has been executed
+16:01:51.030 [main] INFO  Base.Base - log4j - Step 6 has been executed
+16:01:54.049 [main] INFO  Base.Base - log4j - Step 4 has been executed
+16:01:55.284 [main] INFO  Base.Base - log4j - Step 7 has been executed
+16:02:00.183 [main] INFO  Base.Base - log4j - Step 8 has been executed
+16:02:02.860 [main] INFO  Base.Base - log4j - Step 9 has been executed

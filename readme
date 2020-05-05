@@ -1,0 +1,9 @@
+*It is a hybrid project consist of following
+1. Java - The coding language
+2. Selenium - to interact with web elements
+3. Maven - first, it describes how software is built, and second, it describes its dependencies
+4. TestNG - Annotations and testng.xml
+5. JUnit - Annotations
+6. Cucumber-BDD 
+7. Log4J - To capture logs
+8. Extent Report - To generate a user-friendly report

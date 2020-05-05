@@ -1,0 +1,8 @@
+20:14:09.273 [main] INFO  Base.Base - log4j - Step 3
+20:14:12.314 [main] INFO  Base.Base - log4j - Step 4 has been executed
+20:14:13.644 [main] INFO  Base.Base - log4j - Step 5 has been executed
+20:14:18.767 [main] INFO  Base.Base - log4j - Step 6 has been executed
+20:14:21.788 [main] INFO  Base.Base - log4j - Step 4 has been executed
+20:14:23.076 [main] INFO  Base.Base - log4j - Step 7 has been executed
+20:14:28.002 [main] INFO  Base.Base - log4j - Step 8 has been executed
+20:14:30.585 [main] INFO  Base.Base - log4j - Step 9 has been executed
