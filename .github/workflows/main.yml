@@ -34,10 +34,8 @@ jobs:
           
       # Read and print variables
       - name: Print a greeting
-      env:
-        MY_VAR: Hi there! My name is
-        FIRST_NAME: Mona
-        MIDDLE_NAME: The
-        LAST_NAME: Octocat
-      run: |
-        echo $MY_VAR $FIRST_NAME $MIDDLE_NAME $LAST_NAME.
+        with:
+          first_name: Mona
+          middle_name: The
+          last_name: Octocat 
+          run: echo Ravi $first_name  
