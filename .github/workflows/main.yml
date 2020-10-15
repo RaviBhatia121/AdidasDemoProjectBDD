@@ -34,8 +34,4 @@ jobs:
           
       # Read and print variables
       - name: Print a greeting
-        with:
-          first_name: Mona
-          middle_name: The
-          last_name: Octocat 
-          run: echo Ravi $first_name  
+        run: echo completed this step
