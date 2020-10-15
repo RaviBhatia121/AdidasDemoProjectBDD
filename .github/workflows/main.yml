@@ -31,3 +31,9 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+          
+      # Read and print secret keys
+      - name: Print secert keys
+        run: |
+          echo ${{ secrets.FIRST_NAME }}
+          echo ${{ secrets.LAST_NAME }}
