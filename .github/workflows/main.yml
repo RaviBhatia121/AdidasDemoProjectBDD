@@ -47,4 +47,4 @@ jobs:
         
          # Read and print variables
       - name: Print a greeting 3
-        run: echo "GITHUB.ACTOR is ${GITHUB.ACTOR}"
+        run: echo "GITHUB_ACTOR is ${GITHUB_ACTOR}"
