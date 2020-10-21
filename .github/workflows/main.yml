@@ -40,3 +40,15 @@ jobs:
       # Read and print variables
       - name: Print a greeting
         run: echo "My name is , ${name}"
+        
+        # Read and print variables
+      - name: Print a greeting 2
+        run: echo "My name is , ${{ secrets.FIRST_NAME }}"
+        
+         # Read and print variables
+      - name: Print a greeting 3
+        run: echo "My name is ," ${name}
+      
+         # Read and print variables
+      - name: Print a greeting 4
+        run: echo "My name is ," ${{ secrets.FIRST_NAME }}
