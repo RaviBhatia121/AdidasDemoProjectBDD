@@ -9,6 +9,11 @@ on:
     branches: [ master ]
   pull_request:
     branches: [ master ]
+    
+    
+env:
+  name: ${{ secrets.FIRST_NAME }}
+    
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -34,4 +39,4 @@ jobs:
           
       # Read and print variables
       - name: Print a greeting
-        run: echo completed this step
+        run: echo "My name is , ${name}"
