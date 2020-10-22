@@ -1,0 +1,20 @@
+# This workflow will build a Java project with Maven
+# For more information see: https://help.github.com/actions/language-and-framework-guides/building-and-testing-java-with-maven
+
+name: repository job
+on:
+  
+  repository_dispatch:
+  schedule:
+    #This workflow schedule to run the job at 2:30PM on every day-of-week from Monday through Friday
+    - cron: "0 9 * * 1-5"
+
+jobs:
+  echo_test:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up JDK 1.8
+      run: echo "Test"
