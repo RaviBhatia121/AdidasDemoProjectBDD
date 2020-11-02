@@ -16,3 +16,7 @@ jobs:
     - uses: actions/checkout@v2
     - name: Set up JDK 1.8
       run: echo "Test"
+    - name: print job context
+      run: echo "$GITHUB_CONTEXT"
+    - name: print job name and status
+      run: echo job.container.id " and " job.status
