@@ -17,4 +17,4 @@ jobs:
         run: echo ${{ github.job }} " and " ${{ job.status }} 
       - name: slack notification
         run: |
-          curl -X POST -H 'Content-type: application/json' --data '{"text":"Hello, World!"}' https://hooks.slack.com/services/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
+          curl -X POST -H 'Content-type: application/json' --data '{"text":"${{ github.job }} job execution is completed with ${{ job.status }} status, thank you"}' ${{ secrets.SLACK_WEBHOOK }}
