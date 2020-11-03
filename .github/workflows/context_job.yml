@@ -14,9 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: print name and status
-        env:
-          GITHUB_CONTEXT: ${{ toJson(github) }}
-        run: echo github.job " and " job.status 
+        run: echo github.job " and " ${{ job.status }} 
       - name: Dump GitHub context
         env:
           GITHUB_CONTEXT: ${{ toJson(github) }}
