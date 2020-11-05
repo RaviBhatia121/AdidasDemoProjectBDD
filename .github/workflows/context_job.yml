@@ -3,7 +3,7 @@ name: Slack Notification Demo
 on: push
 
 env:
-  SAUCE_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+  SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
   
 jobs:
   slackNotification:
