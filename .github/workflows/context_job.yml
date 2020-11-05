@@ -3,8 +3,7 @@ name: Slack Notification Demo
 on: push
 
 env:
-  SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
-  SLACK_MESSAGE: '${{ github.job }} job has been executed with ${{ job.status }} status, thank you'    
+  SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}   
   
 jobs:
   slackNotification:
@@ -14,6 +13,8 @@ jobs:
     - uses: actions/checkout@v2
     - name: Slack Notification
       uses: rtCamp/action-slack-notify@master
+      env:
+        SLACK_MESSAGE: '${{ github.job }} job has been executed with ${{ job.status }} status, thank you'    
           
           
   slackNotification2:
@@ -23,3 +24,5 @@ jobs:
     - uses: actions/checkout@v2
     - name: Slack Notification
       uses: rtCamp/action-slack-notify@master 
+      env:
+        SLACK_MESSAGE: '${{ github.job }} job has been executed with ${{ job.status }} status, thank you'    
