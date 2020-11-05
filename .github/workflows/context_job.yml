@@ -9,4 +9,5 @@ jobs:
     - name: Slack Notification
       uses: rtCamp/action-slack-notify@master
       env:
+        SLACK_MESSAGE: '${{ github.job }} job has been executed with ${{ job.status }} status, thank you'  
         SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
