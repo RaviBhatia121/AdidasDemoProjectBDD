@@ -12,9 +12,10 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Slack Notification
-      uses: rtCamp/action-slack-notify@master
+      uses: rtCamp/action-slack-notify@v2
       env:
-        SLACK_MESSAGE: '${{ github.job }} job has been executed with ${{ job.status }} status, thank you - latest'    
+        SLACK_MESSAGE: 'Update notification'
+        color: good
           
           
   slackNotification2:
