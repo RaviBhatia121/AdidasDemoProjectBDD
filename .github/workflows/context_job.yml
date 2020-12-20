@@ -15,7 +15,7 @@ jobs:
       uses: rtCamp/action-slack-notify@v2
       env:
         SLACK_MESSAGE: 'Update notification'
-        color: good
+        color: danger
           
           
   slackNotification2:
