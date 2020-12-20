@@ -15,7 +15,7 @@ jobs:
       uses: rtCamp/action-slack-notify@v2
       env:
         SLACK_COLOR: '#EB1C1C'
-        SLACK_MESSAGE: 'Updated fail notification ❌'
+        SLACK_MESSAGE: ':fire: ${{ github.job }} job has been executed with ${{ job.status }} status, thank you ❌'
           
           
   slackNotification2:
@@ -27,4 +27,4 @@ jobs:
       uses: rtCamp/action-slack-notify@v2
       env:
         SLACK_COLOR: '#008000'
-        SLACK_MESSAGE: 'Updated sucess notification :trophy:'
+        SLACK_MESSAGE: ':rocket: ${{ github.job }} job has been executed with ${{ job.status }} status, thank you :trophy:'
