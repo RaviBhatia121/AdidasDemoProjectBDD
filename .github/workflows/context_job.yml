@@ -14,8 +14,8 @@ jobs:
     - name: Slack Notification
       uses: rtCamp/action-slack-notify@v2
       env:
-        SLACK_COLOR: '#3278BD'
-        SLACK_MESSAGE: 'Updated sucess notification'
+        SLACK_COLOR: '#EB1C1C'
+        SLACK_MESSAGE: 'Updated fail notification'
           
           
   slackNotification2:
@@ -26,9 +26,8 @@ jobs:
     - name: Slack Notification
       uses: rtCamp/action-slack-notify@v2
       env:
-        SLACK_CHANNEL: general
         SLACK_COLOR: '#3278BD'
         SLACK_ICON: https://github.com/rtCamp.png?size=48
-        SLACK_MESSAGE: 'Post Content :rocket:'
-        SLACK_TITLE: Post Title
+        SLACK_MESSAGE: 'Updated sucess notification :rocket:'
+        SLACK_TITLE: Message
         SLACK_USERNAME: rtCamp
