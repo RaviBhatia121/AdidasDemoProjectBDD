@@ -15,7 +15,7 @@ jobs:
       uses: rtCamp/action-slack-notify@v2
       env:
         SLACK_COLOR: '#EB1C1C'
-        SLACK_MESSAGE: 'Updated fail notification 😭'
+        SLACK_MESSAGE: 'Updated fail notification :cross:'
         slack-optional-icon_emoji: ":fire:" 
           
           
@@ -28,7 +28,5 @@ jobs:
       uses: rtCamp/action-slack-notify@v2
       env:
         SLACK_COLOR: '#008000'
-        SLACK_ICON: https://github.com/rtCamp.png?size=48
-        SLACK_MESSAGE: 'Updated sucess notification 🏆 :rocket:'
+        SLACK_MESSAGE: 'Updated sucess notification :trophy:'
         slack-optional-icon_emoji: ":rocket:" 
-        SLACK_USERNAME: rtCamp
