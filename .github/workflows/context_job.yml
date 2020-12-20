@@ -14,8 +14,8 @@ jobs:
     - name: Slack Notification
       uses: rtCamp/action-slack-notify@v2
       env:
+        SLACK_COLOR: '#3278BD'
         SLACK_MESSAGE: 'Updated sucess notification'
-        color: success
           
           
   slackNotification2:
@@ -26,5 +26,5 @@ jobs:
     - name: Slack Notification
       uses: rtCamp/action-slack-notify@v2
       env:
-        SLACK_MESSAGE: 'Updated orange notification'
-        color: orange
+        SLACK_COLOR: '#EB1C1C'
+        SLACK_MESSAGE: 'Updated failed notification'
