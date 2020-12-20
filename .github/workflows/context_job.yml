@@ -14,8 +14,8 @@ jobs:
     - name: Slack Notification
       uses: rtCamp/action-slack-notify@v2
       env:
-        SLACK_MESSAGE: 'Updated failed notification'
-        color: failed
+        SLACK_MESSAGE: 'Updated sucess notification'
+        color: success
           
           
   slackNotification2:
@@ -24,6 +24,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Slack Notification
-      uses: rtCamp/action-slack-notify@master 
+      uses: rtCamp/action-slack-notify@v2
       env:
-        SLACK_MESSAGE: '${{ github.job }} job has been executed with ${{ job.status }} status, thank you - latest'    
+        SLACK_MESSAGE: 'Updated orange notification'
+        color: orange
